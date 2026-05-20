@@ -43,6 +43,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/GazeArray.msg"
   "msg/Gesture.msg"
   "msg/Group.msg"
+  "msg/ConversationInput.msg"
   "msg/IdsList.msg"
   "msg/IdsMatch.msg"
   "msg/LiveSpeech.msg"
