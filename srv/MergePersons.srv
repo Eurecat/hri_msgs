@@ -1,0 +1,11 @@
+# Consolidate two canonical persons that turned out to be the same real
+# person (e.g. a fresh face-derived id that should have resolved to an
+# existing, long-known voice/face identity). All of secondary_person_id's
+# face/voice profiles move to primary_person_id, which is the id that
+# survives; secondary_person_id is deleted.
+string primary_person_id
+string secondary_person_id
+---
+bool success
+string message
+string person_id

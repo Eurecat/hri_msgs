@@ -1,0 +1,7 @@
+# List every canonical person currently in the person_manager identity database.
+# One line of human-readable summary per person, meant for an operator deciding
+# which ids to pass to MergePersons / UnlinkProfile.
+---
+bool success
+string message
+string[] summaries
