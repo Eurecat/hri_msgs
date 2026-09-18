@@ -1,11 +1,11 @@
-# Remove one wrongly-linked face or voice profile from a person (e.g. VSAD
-# matched the wrong speaker, or face recognition merged the wrong track).
-# The person itself is kept, only that one profile link is dropped.
+# Remove one wrongly-linked face, voice or wearable profile from a person
+# (e.g. VSAD matched the wrong speaker, or face recognition merged the wrong
+# track). The person itself is kept, only that one profile link is dropped.
 string person_id
-string kind          # "face" or "voice"
-string profile_id    # e.g. "U7" or "speaker14"
+string kind          # "face", "voice" or "wearable"
+string profile_id    # e.g. "U7", "speaker14" or "shimmer3_1FE7"
 string source         # optional: empty = default source for kind
-                       # (face_recognition / speaker_recognition)
+                       # (face_recognition / speaker_recognition / wearable)
 ---
 bool success
 string message

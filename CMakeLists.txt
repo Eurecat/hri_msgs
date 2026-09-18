@@ -76,6 +76,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/ListPersons.srv"
   "srv/MergePersons.srv"
   "srv/UnlinkProfile.srv"
+  "srv/AssignWearable.srv"
   DEPENDENCIES std_msgs geometry_msgs
 )
 

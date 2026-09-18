@@ -19,3 +19,8 @@ Gesture[] gestures
 FacialLandmarks face_landmarks
 FacialRecognition face_recognition
 Gaze gaze
+
+# Physiological info from a wearable assigned to this person (assign_wearable
+# service). Empty wearable_id means no wearable is linked, in which case every
+# other field here is meaningless.
+WearablePhysiology physiology

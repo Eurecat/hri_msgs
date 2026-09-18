@@ -1,0 +1,20 @@
+# Bind a wearable device to a canonical person, so the physiological data it
+# publishes on /humans/wearables/physiology is attributed to that person.
+#
+# This is deliberately manual: nothing in a heart rate or skin conductance
+# signal identifies who is wearing the device, so unlike faces and voices the
+# link cannot be inferred from the data. An operator states it.
+#
+# Pass an empty person_id to clear the link instead (the wearable becomes
+# unassigned and its data is published without a person).
+string person_id
+string wearable_id     # as published in WearablePhysiology.wearable_id, e.g. "shimmer3_1FE7"
+
+# The same device on someone else is normally a mistake worth refusing, so a
+# wearable already linked to a different person is rejected unless force is
+# set. Set it when the device genuinely changed wearer.
+bool force
+---
+bool success
+string message
+string person_id       # the person the wearable is now linked to, empty if cleared
