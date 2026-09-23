@@ -32,6 +32,7 @@ find_package(geometry_msgs REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/AudioFeatures.msg"
   "msg/BodyPosture.msg"
+  "msg/BodyPostureArray.msg"
   "msg/EngagementLevel.msg"
   "msg/Expression.msg"
   "msg/FacialActionUnits.msg"
