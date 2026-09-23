@@ -43,4 +43,8 @@ string skeleton_id
 NormalizedRegionOfInterest2D bbox_xyxy
 
 uint8 gesture # one of the above gesture constants
-uint8 handedness # one of the above handedness constants 
+uint8 handedness # one of the above handedness constants
+
+# Hand keypoints (21-point MediaPipe hand landmark convention), normalized [0-1].
+# Empty when the detector does not expose per-landmark hand keypoints.
+NormalizedPointOfInterest2D[] keypoints
