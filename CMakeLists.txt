@@ -64,6 +64,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Diarization.msg"
   "msg/Vad.msg"
   "msg/WakeWord.msg"
+  "msg/RobotSpeech.msg"
   # Wearable physiological sensing (Shimmer3 GSR+): raw streams, derived
   # features and the fused per-wearer summary.
   "msg/Gsr.msg"
