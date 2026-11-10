@@ -57,6 +57,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Skeleton2DArray.msg"
   "msg/SoftBiometrics.msg"
   "msg/SpeechActivityDetection.msg"
+  "msg/SpeakerMatch.msg"
   "msg/SpeechResult.msg"
   "msg/Entity.msg"
   "msg/EntityArray.msg"

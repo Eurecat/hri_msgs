@@ -20,6 +20,8 @@ Entity visual_detection
 # Speech info
 SpeechActivityDetection speech_activity
 SpeechResult speech_result
+# How voice and face are associated and why the person counts as speaking (speaker_match_mode)
+SpeakerMatch speaker_match
 
 # Body info
 Skeleton2D skeleton
