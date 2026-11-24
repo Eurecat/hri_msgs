@@ -26,6 +26,7 @@ endif()
 
 find_package(ament_cmake_auto REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
+find_package(builtin_interfaces REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 
@@ -66,6 +67,9 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Vad.msg"
   "msg/WakeWord.msg"
   "msg/RobotSpeech.msg"
+  # Turn taking: events about the people talking, and the state of the agent behind the robot.
+  "msg/TurnEvent.msg"
+  "msg/AgentState.msg"
   # Wearable physiological sensing (Shimmer3 GSR+): raw streams, derived
   # features and the fused per-wearer summary.
   "msg/Gsr.msg"
@@ -80,7 +84,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/MergePersons.srv"
   "srv/UnlinkProfile.srv"
   "srv/AssignWearable.srv"
-  DEPENDENCIES std_msgs geometry_msgs
+  DEPENDENCIES builtin_interfaces std_msgs geometry_msgs
 )
 
 ament_export_dependencies(rosidl_default_runtime)
